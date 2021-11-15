@@ -1,0 +1,1 @@
+python -c "from airflow.models import DagBag; d = DagBag();"
