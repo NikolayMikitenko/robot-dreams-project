@@ -23,3 +23,5 @@
 * dags/common/spark_postgres_to_bronze.py - script with functions for load DB dshop data from DB to bronze
 * dags/common/spark_silver_to_dwh.py - script with functions for data from silver to DWH
 
+## DWH prepare logic and load available in file:
+https://github.com/NikolayMikitenko/robot-dreams-spark/blob/main/Homework_Project_Spark.ipynb
