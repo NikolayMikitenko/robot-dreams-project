@@ -25,3 +25,12 @@
 
 ## DWH prepare logic and load available in file:
 https://github.com/NikolayMikitenko/robot-dreams-spark/blob/main/Homework_Project_Spark.ipynb
+
+## Data cleaning
+* Aggregation rows by orders in one row with summarize of quantity
+* Deduplication in API and loading into one table in Cleaned
+
+## Data preparation for DWH
+* load dimensions
+* load facts
+* for facts check missing keys in dimension and insert Unknown records for missing keys
