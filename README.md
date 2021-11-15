@@ -3,8 +3,8 @@
 ## COPY ALL FILES FROM FOLDER dags to airflow/dags and add PYTHONPATH to common folder!!!
 
 ## Pipelines
-out_of_stock_pipeline - load data from http to silver layer
-postgres_data_pipeline - load dshop data to silver layer and after to DWH 
+* out_of_stock_pipeline - load data from http to silver layer
+* postgres_data_pipeline - load dshop data to silver layer and after to DWH 
 
 ## Folders contents
 * scripts - folder with sql scripts for DWH
