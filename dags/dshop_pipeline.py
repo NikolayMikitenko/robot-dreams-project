@@ -134,9 +134,10 @@ load_to_dwh_fact_out_of_stock = PythonOperator(
 load_to_bronze_table_aisles >> load_to_silver_table_aisles >> load_to_dwh_dimension_clients >> load_to_dwh_fact_orders
 load_to_bronze_table_clients >> load_to_silver_table_clients >> load_to_dwh_dimension_clients
 load_to_bronze_table_departments >> load_to_silver_table_departments >> load_to_dwh_dimension_clients
-load_to_bronze_table_orders >> load_to_silver_table_products >> load_to_dwh_dimension_products
 
-load_to_bronze_table_products >> load_to_silver_table_orders
+load_to_bronze_table_products >> load_to_silver_table_products >> load_to_dwh_dimension_products
+ 
+load_to_bronze_table_orders >> load_to_silver_table_orders >> load_to_dwh_fact_orders
 
 load_to_dwh_dimension_date >> load_to_dwh_fact_orders
 load_to_dwh_dimension_date >> load_to_dwh_fact_out_of_stock
